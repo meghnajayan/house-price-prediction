@@ -23,9 +23,11 @@ df
 #splitting the dataset
 X=df[["BuildingType","Location","Size","AreaSqFt",
       "NoOfBath","NoOfPeople","NoOfBalcony"]]
-y=df["RentPerMonth"]                            
+y=df["RentPerMonth"] 
+#model
+model=LinearRegression()
 #prediction
 y_pred = model.predict(X_test)
 print('predicted response:', y_pred, sep='\n')
 
-model=LinearRegression()
+
